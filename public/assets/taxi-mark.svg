@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">TAXI</title>
+  <!--
+    TAXI mark, 2026.
+    A taxi-yellow tile carrying the three ideas of the product:
+      * a compliance tick   — the return, filed and fetched;
+      * speed lines         — automation, not clicking;
+      * a checker band      — the taxi, the co-driver.
+    Master artwork. The PNG / ICO sizes in others/assets are drawn from the
+    same coordinates by tools/draw_logo.ps1; small sizes drop the checker
+    band and the speed lines so the tick survives at 16 px.
+  -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#FF9F0A"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="sq"><rect x="16" y="16" width="480" height="480" rx="120"/></clipPath>
+    <pattern id="checker" x="16" y="376" width="64" height="64" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#0E1428"/>
+      <rect x="32" y="32" width="32" height="32" fill="#0E1428"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect x="16" y="16" width="480" height="480" fill="url(#tile)"/>
+    <rect x="16" y="376" width="480" height="64" fill="url(#checker)"/>
+    <rect x="16" y="16" width="480" height="240" fill="url(#gloss)"/>
+  </g>
+  <g fill="none" stroke="#0E1428" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 222 L246 278 L398 126" stroke-width="64"/>
+    <path d="M100 178 H140 M72 226 H140 M100 274 H140" stroke-width="28"/>
+  </g>
+</svg>

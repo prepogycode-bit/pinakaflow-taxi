@@ -1,0 +1,8 @@
+{
+  "name": "pinakaflow",
+  "compatibility_date": "2026-11-04",
+  "assets": {
+    "directory": "./dist"
+  },
+  "keep_vars": true
+}
